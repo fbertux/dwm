@@ -1261,7 +1261,17 @@ propertynotify(XEvent *e)
 void
 quit(const Arg *arg)
 {
-	running = 0;
+    Monitor *m;
+    Client *c;
+    unsigned int n;
+
+    for (n = 0, m = mons; m; m = m->next)
+        for (c = m->clients; c; c = c->next, ++n);
+
+    if (n == 0)
+        running = 0;
+    else
+        printf("[dwm] not exiting (n=%d)\n", n);
 }
 
 Monitor *
