@@ -73,6 +73,9 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+
+static const char *slock[]   = { "slock", NULL };
+
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -113,6 +116,7 @@ static Key keys[] = {
     { 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
     { MODKEY,                       XK_bracketleft,     spawn, {.v = downvol } },
     { MODKEY,                       XK_bracketright,    spawn, {.v = upvol   } },
+    { MODKEY,                       XK_F11,    spawn,          {.v = slock } },
 };
 
 /* button definitions */
