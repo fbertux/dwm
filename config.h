@@ -76,6 +76,8 @@ static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "togg
 
 static const char *slock[]   = { "slock", NULL };
 
+static const char *emacscmd[] = { "emacs", NULL };
+
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -117,6 +119,7 @@ static Key keys[] = {
     { MODKEY,                       XK_bracketleft,     spawn, {.v = downvol } },
     { MODKEY,                       XK_bracketright,    spawn, {.v = upvol   } },
     { MODKEY,                       XK_F11,    spawn,          {.v = slock } },
+    { MODKEY,                       XK_e,      spawn,          {.v = emacscmd } },
 };
 
 /* button definitions */
