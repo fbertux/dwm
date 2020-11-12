@@ -14,10 +14,12 @@ static const char col_gray2[]       = "#4f4f4f";
 static const char col_gray3[]       = "#747369";
 static const char col_white[]       = "#dcdccc";
 static const char col_cyan[]        = "#7cb8bb";
+static const char col_urgborder[]   = "#f2777a";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
     [SchemeNorm] = { col_white, col_gray1, col_gray1 },
     [SchemeSel]  = { col_white, col_gray2, col_gray3 },
+    [SchemeUrg]  = { col_white, col_gray2, col_urgborder },
 };
 
 /* tagging */
