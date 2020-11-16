@@ -31,14 +31,14 @@ static const Rule rules[] = {
     /* class               instance    title       tags mask     isfloating   monitor */
     { "Brave-browser",     NULL,       NULL,       1 << 1,            0,           -1 },
     { "Firefox",           NULL,       NULL,       1 << 1,            0,           -1 },
-    { "calibre",           NULL,       NULL,       1 << 6,            0,           -1 },
-    { "Popcorn-Time",      NULL,       NULL,       1 << 7,            0,           -1 },
-    { "Spotify",           NULL,       NULL,       1 << 7,            0,           -1 },
-    { "Hexchat",           NULL,       NULL,       1 << 8,            0,           -1 },
-    { "Skype",             NULL,       NULL,       1 << 8,            0,           -1 },
-    { "Slack",             NULL,       NULL,       1 << 8,            0,           -1 },
-    { "discord",           NULL,       NULL,       1 << 8,            0,           -1 },
-    { "yakyak",            NULL,       NULL,       1 << 8,            0,           -1 },
+    { "calibre",           NULL,       NULL,       1 << 7,            0,           -1 },
+    { "Popcorn-Time",      NULL,       NULL,       1 << 8,            0,           -1 },
+    { "Spotify",           NULL,       NULL,       1 << 8,            0,           -1 },
+    { "Hexchat",           NULL,       NULL,       1 << 9,            0,           -1 },
+    { "Skype",             NULL,       NULL,       1 << 9,            0,           -1 },
+    { "Slack",             NULL,       NULL,       1 << 9,            0,           -1 },
+    { "discord",           NULL,       NULL,       1 << 9,            0,           -1 },
+    { "yakyak",            NULL,       NULL,       1 << 9,            0,           -1 },
 };
 
 /* layout(s) */
