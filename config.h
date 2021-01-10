@@ -73,6 +73,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+static const char *pctlplaycmd[]  = { "playerctl", "play-pause", NULL };
 
 static const char *slock[]   = { "slock", NULL };
 
@@ -118,8 +119,10 @@ static Key keys[] = {
     { 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
     { 0,                       XF86XK_AudioMute,        spawn, {.v = mutevol } },
     { 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+    { 0,                       XF86XK_AudioPlay,        spawn, {.v = pctlplaycmd } },
     { MODKEY,                       XK_bracketleft,     spawn, {.v = downvol } },
     { MODKEY,                       XK_bracketright,    spawn, {.v = upvol   } },
+    { MODKEY|ShiftMask,             XK_bracketleft,     spawn, {.v = pctlplaycmd } },
     { MODKEY,                       XK_F11,    spawn,          {.v = slock } },
     { MODKEY,                       XK_e,      spawn,          {.v = emacscmd } },
     { 0,                            XK_Print,  spawn,          {.v = scrotcmd } },
