@@ -40,6 +40,7 @@ static const Rule rules[] = {
     { "discord",           NULL,       NULL,       1 << 9,            0,           -1 },
     { "yakyak",            NULL,       NULL,       1 << 9,            0,           -1 },
     { "xterm-256color",    NULL,       "system",   1,                 0,           -1 },
+    { "xterm-256color",    NULL,       "pikachu",  1 << 2,            0,           -1 },
 };
 
 /* layout(s) */
