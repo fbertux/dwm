@@ -79,7 +79,7 @@ static const char *pctlplaycmd[]  = { "playerctl", "play-pause", NULL };
 
 static const char *slock[]   = { "slock", NULL };
 
-static const char *emacscmd[] = { "emacs", NULL };
+static const char *emacscmd[] = { "emacs", "-mm", NULL };
 
 static const char *scrotcmd[] = { "scrot", "%Y-%m-%d-%H%M%S.png", "-e", "mv $f ~/documents/scrot", NULL };
 
