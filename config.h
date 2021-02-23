@@ -28,19 +28,19 @@ static const Rule rules[] = {
      *  WM_CLASS(STRING) = instance, class
      *  WM_NAME(STRING) = title
      */
-    /* class               instance    title       tags mask     isfloating   monitor */
-    { "xterm-256color",    NULL,       "system",   1,                 0,           -1 },
-    { "Emacs",             NULL,       "emacs-1",  1,                 0,           -1 },
-    { "Brave-browser",     NULL,       NULL,       1 << 1,            0,           -1 },
-    { "Firefox",           NULL,       NULL,       1 << 1,            0,           -1 },
-    { "xterm-256color",    NULL,       "pikachu",  1 << 2,            0,           -1 },
-    { "calibre",           NULL,       NULL,       1 << 7,            0,           -1 },
-    { "Popcorn-Time",      NULL,       NULL,       1 << 8,            0,           -1 },
-    { "Hexchat",           NULL,       NULL,       1 << 9,            0,           -1 },
-    { "Skype",             NULL,       NULL,       1 << 9,            0,           -1 },
-    { "Slack",             NULL,       NULL,       1 << 9,            0,           -1 },
-    { "discord",           NULL,       NULL,       1 << 9,            0,           -1 },
-    { "Emacs",             NULL,       "emacs-chat",1 << 9,           0,           -1 },
+    /* class               instance    title           tags mask     isfloating   monitor */
+    { "xterm-256color",    NULL,       "system",       1,                 0,           -1 },
+    { "Emacs",             NULL,       "emacs-1",      1,                 0,           -1 },
+    { "Brave-browser",     NULL,       NULL,           1 << 1,            0,           -1 },
+    { "Firefox",           NULL,       NULL,           1 << 1,            0,           -1 },
+    { "xterm-256color",    NULL,       "pikachu",      1 << 2,            0,           -1 },
+    { "calibre",           NULL,       NULL,           1 << 7,            0,           -1 },
+    { "Popcorn-Time",      NULL,       NULL,           1 << 8,            0,           -1 },
+    { "Hexchat",           NULL,       NULL,           1 << 9,            0,           -1 },
+    { "Skype",             NULL,       NULL,           1 << 9,            0,           -1 },
+    { "Slack",             NULL,       NULL,           1 << 9,            0,           -1 },
+    { "discord",           NULL,       NULL,           1 << 9,            0,           -1 },
+    { "Emacs",             NULL,       "emacs-chat",   1 << 9,            0,           -1 },
 };
 
 /* layout(s) */
