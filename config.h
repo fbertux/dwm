@@ -39,6 +39,7 @@ static const Rule rules[] = {
     { "Slack",             NULL,       NULL,       1 << 9,            0,           -1 },
     { "discord",           NULL,       NULL,       1 << 9,            0,           -1 },
     { "yakyak",            NULL,       NULL,       1 << 9,            0,           -1 },
+    { "Emacs",             NULL,       "emacs-chat",1 << 9,           0,           -1 },
     { "xterm-256color",    NULL,       "system",   1,                 0,           -1 },
     { "xterm-256color",    NULL,       "pikachu",  1 << 2,            0,           -1 },
     { "Emacs",             NULL,       "emacs-1",  1,                 0,           -1 },
