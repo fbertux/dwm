@@ -36,7 +36,6 @@ static const Rule rules[] = {
     { "xterm-256color",    NULL,       "pikachu",      1 << 2,            0,           -1 },
     { "calibre",           NULL,       NULL,           1 << 7,            0,           -1 },
     { "Popcorn-Time",      NULL,       NULL,           1 << 8,            0,           -1 },
-    { "Hexchat",           NULL,       NULL,           1 << 9,            0,           -1 },
     { "Skype",             NULL,       NULL,           1 << 9,            0,           -1 },
     { "Slack",             NULL,       NULL,           1 << 9,            0,           -1 },
     { "discord",           NULL,       NULL,           1 << 9,            0,           -1 },
