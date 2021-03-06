@@ -23,6 +23,9 @@ static const char *colors[][3]      = {
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 
+/* first element is for all-tag view */
+static int defaultlayouts[1 + LENGTH(tags)]  = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1};
+
 static const Rule rules[] = {
     /* xprop(1):
      *  WM_CLASS(STRING) = instance, class
