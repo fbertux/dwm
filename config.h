@@ -87,6 +87,8 @@ static const char *emacscmd[] = { "emacs", "-mm", NULL };
 
 static const char *scrotcmd[] = { "scrot", "%Y-%m-%d-%H%M%S.png", "-e", "mv $f ~/documents/scrot", NULL };
 
+static const char *tooglekbdcmd[] = { "fb-toogle-kbd-layout", NULL };
+
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -132,6 +134,7 @@ static Key keys[] = {
     { MODKEY,                       XK_F11,    spawn,          {.v = slock } },
     { MODKEY,                       XK_e,      spawn,          {.v = emacscmd } },
     { 0,                            XK_Print,  spawn,          {.v = scrotcmd } },
+    { MODKEY,                       XK_F12,    spawn,          {.v = tooglekbdcmd } },
 };
 
 /* button definitions */
