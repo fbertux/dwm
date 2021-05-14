@@ -37,6 +37,7 @@ static const Rule rules[] = {
     { "Brave-browser",     NULL,       NULL,           1 << 1,            0,           -1 },
     { "Firefox",           NULL,       NULL,           1 << 1,            0,           -1 },
     { "xterm-256color",    NULL,       "pikachu",      1 << 2,            0,           -1 },
+    { "KeePassXC",         NULL,       NULL,           1 << 7,            0,           -1 },
     { "calibre",           NULL,       NULL,           1 << 7,            0,           -1 },
     { "Popcorn-Time",      NULL,       NULL,           1 << 8,            0,           -1 },
     { "Skype",             NULL,       NULL,           1 << 9,            0,           -1 },
