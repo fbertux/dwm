@@ -82,7 +82,7 @@ static const char *slock[]   = { "slock", NULL };
 
 static const char *emacscmd[] = { "emacs", "-mm", NULL };
 
-static const char *scrotcmd[] = { "scrot", "%Y-%m-%d-%H%M%S.png", "-e", "mv $f ~/documents/scrot", NULL };
+static const char *prtsccmd[] = { "flameshot", "screen", "-p", "/home/fabio/documents/screenshots/", NULL };
 
 static const char *togglekbdcmd[] = { "fb-toggle-kbd-layout", NULL };
 
@@ -130,7 +130,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_bracketleft,     spawn, {.v = pctlplaycmd } },
     { MODKEY,                       XK_F11,    spawn,          {.v = slock } },
     { MODKEY,                       XK_e,      spawn,          {.v = emacscmd } },
-    { 0,                            XK_Print,  spawn,          {.v = scrotcmd } },
+    { 0,                            XK_Print,  spawn,          {.v = prtsccmd } },
     { MODKEY,                       XK_F12,    spawn,          {.v = togglekbdcmd } },
 };
 
