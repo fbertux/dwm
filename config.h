@@ -39,7 +39,7 @@ static const Rule rules[] = {
     { "Skype",             NULL,       NULL,           1 << 9,            0,           -1 },
     { "Slack",             NULL,       NULL,           1 << 9,            0,           -1 },
     { "discord",           NULL,       NULL,           1 << 9,            0,           -1 },
-    { "Emacs",             NULL,       "emacs-chat",   1 << 9,            0,           -1 },
+    { "Element",           NULL,       NULL,           1 << 9,            0,           -1 },
     { "Emacs",             NULL,       "emacs-notes",  1,                 0,            1 },
     { "Microsoft Teams - Preview", NULL, NULL,         1 << 9,            0,           -1 },
 };
