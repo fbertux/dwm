@@ -89,7 +89,7 @@ static const char *slock[]   = { "slock", NULL };
 
 static const char *emacscmd[] = { "emacs", "-mm", NULL };
 
-static const char *prtsccmd[] = { "flameshot", "screen", "-p", "/home/fabio/documents/screenshots/", NULL };
+static const char *prtsccmd[] = { "flameshot", "screen", "-p", "/home/fabio/screenshots/", NULL };
 
 static const char *togglekbdcmd[] = { "fb-toggle-kbd-layout", NULL };
 
