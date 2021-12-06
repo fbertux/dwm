@@ -93,6 +93,9 @@ static const char *prtsccmd[] = { "flameshot", "screen", "-p", "/home/fabio/scre
 
 static const char *togglekbdcmd[] = { "fb-toggle-kbd-layout", NULL };
 
+static const char *dunstctlclose[] = { "dunstctl", "close", NULL };
+static const char *dunstctlcloseall[] = { "dunstctl", "close-all", NULL };
+
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -142,6 +145,8 @@ static Key keys[] = {
     { MODKEY,                       XK_e,      spawn,          {.v = emacscmd } },
     { 0,                            XK_Print,  spawn,          {.v = prtsccmd } },
     { MODKEY,                       XK_F12,    spawn,          {.v = togglekbdcmd } },
+    { MODKEY,                       XK_n,      spawn,          {.v = dunstctlclose } },
+    { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = dunstctlcloseall } },
 };
 
 /* button definitions */
