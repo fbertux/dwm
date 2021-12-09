@@ -96,6 +96,9 @@ static const char *togglekbdcmd[] = { "fb-toggle-kbd-layout", NULL };
 static const char *dunstctlclose[] = { "dunstctl", "close", NULL };
 static const char *dunstctlcloseall[] = { "dunstctl", "close-all", NULL };
 
+static const char *brightnessinc[] = { "light", "-A", "2", NULL };
+static const char *brightnessdec[] = { "light", "-U", "2", NULL };
+
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -147,6 +150,8 @@ static Key keys[] = {
     { MODKEY,                       XK_F12,    spawn,          {.v = togglekbdcmd } },
     { MODKEY,                       XK_n,      spawn,          {.v = dunstctlclose } },
     { MODKEY|ShiftMask,             XK_n,      spawn,          {.v = dunstctlcloseall } },
+    { 0,                            XF86XK_MonBrightnessUp, spawn, {.v = brightnessinc } },
+    { 0,                            XF86XK_MonBrightnessDown, spawn, {.v = brightnessdec } },
 };
 
 /* button definitions */
