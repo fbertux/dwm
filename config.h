@@ -34,7 +34,7 @@ static const Rule rules[] = {
      *  WM_NAME(STRING) = title
      */
     /* class               instance    title           tags mask     isfloating   monitor */
-    { "xterm-256color",    NULL,       "system",       1,                 0,           -1 },
+    { "Alacritty",         NULL,       "tmux-system",  1,                 0,           -1 },
     { "Emacs",             NULL,       "emacs-1",      1,                 0,           -1 },
     { "Brave-browser",     NULL,       NULL,           1 << 1,            0,           -1 },
     { "Firefox",           NULL,       NULL,           1 << 1,            0,           -1 },
