@@ -99,6 +99,8 @@ static const char *dunstctlcloseall[] = { "dunstctl", "close-all", NULL };
 static const char *brightnessinc[] = { "light", "-A", "2", NULL };
 static const char *brightnessdec[] = { "light", "-U", "2", NULL };
 
+static const char *extmonitor[] = { "fb-check-ext-monitor", NULL };
+
 static Key keys[] = {
     /* modifier                     key        function        argument */
     { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -144,6 +146,7 @@ static Key keys[] = {
     { MODKEY,                       XK_bracketleft,     spawn, {.v = downvol } },
     { MODKEY,                       XK_bracketright,    spawn, {.v = upvol   } },
     { MODKEY|ShiftMask,             XK_bracketleft,     spawn, {.v = pctlplaycmd } },
+    { MODKEY,                       XK_F7,     spawn,          {.v = extmonitor } },
     { MODKEY,                       XK_F11,    spawn,          {.v = slock } },
     { MODKEY,                       XK_e,      spawn,          {.v = emacscmd } },
     { 0,                            XK_Print,  spawn,          {.v = prtsccmd } },
